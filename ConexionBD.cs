@@ -78,7 +78,40 @@ namespace Practica_de_SQL_Base_de_datos
 
 
 
+        }
+      
+        
+        public void Condicion1(DataGridView grilla)
+        {
+            try
+            {
+                // Create a new command
+                OleDbCommand comando = new OleDbCommand
+                {
+                    Connection = Conexion, // Assuming Conexion is your OleDbConnection object
+                    CommandType = CommandType.Text, // Using Text instead of TableDirect for a standard SQL query
+                    CommandText = "SELECT IdLibro, Titulo FROM Libro"
+                };
 
+                // Create a new data adapter with the command
+                OleDbDataAdapter adaptador = new OleDbDataAdapter(comando);
+
+                // Create a new DataTable to hold the query results
+                DataTable tabla = new DataTable();
+
+                // Fill the DataTable with the results of the query
+                adaptador.Fill(tabla);
+
+                // Bind the DataTable to the DataGridView
+                grilla.DataSource = tabla;
+            }
+            catch (Exception ex)
+            {
+                // Show a message box with the error message
+                MessageBox.Show("Hubo un error: " + ex.Message);
+                // Optionally rethrow the exception if needed
+                // throw;
+            }
         }
 
 

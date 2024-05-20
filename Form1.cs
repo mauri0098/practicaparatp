@@ -27,7 +27,14 @@ namespace Practica_de_SQL_Base_de_datos
 
         private void button2_Click(object sender, EventArgs e)
         {
+            objconexionBD.conectarBD();
             objconexionBD.Traertabla(dataGridView1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmTablaCondiciones frmTablaCondiciones = new frmTablaCondiciones();    
+            frmTablaCondiciones.ShowDialog();
         }
     }
 }
