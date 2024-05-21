@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcondicion3combox_cajadetexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcondicion3combox_cajadetexto.Designer.cs">
+      <DependentUpon>frmcondicion3combox_cajadetexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmguardartabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmguardartabla.Designer.cs">
+      <DependentUpon>frmguardartabla.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTablaCondiciones.cs">
       <SubType>Form</SubType>
@@ -59,13 +71,34 @@
     <Compile Include="frmTablaCondiciones.Designer.cs">
       <DependentUpon>frmTablaCondiciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTablaCondiciones2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTablaCondiciones2.Designer.cs">
+      <DependentUpon>frmTablaCondiciones2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TodasLasCondiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodasLasCondiciones.Designer.cs">
+      <DependentUpon>TodasLasCondiciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcondicion3combox_cajadetexto.resx">
+      <DependentUpon>frmcondicion3combox_cajadetexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmguardartabla.resx">
+      <DependentUpon>frmguardartabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTablaCondiciones.resx">
       <DependentUpon>frmTablaCondiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTablaCondiciones2.resx">
+      <DependentUpon>frmTablaCondiciones2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +109,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TodasLasCondiciones.resx">
+      <DependentUpon>TodasLasCondiciones.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

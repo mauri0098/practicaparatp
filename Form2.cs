@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Practica_de_SQL_Base_de_datos
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
         ConexionBD objconexionBD;
 
-        public Form1()
+
+        public Form2()
         {
             InitializeComponent();
             objconexionBD = new ConexionBD();
@@ -33,8 +34,8 @@ namespace Practica_de_SQL_Base_de_datos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmTablaCondiciones frmTablaCondiciones = new frmTablaCondiciones();    
-            frmTablaCondiciones.ShowDialog();
+            TodasLasCondiciones todas = new TodasLasCondiciones();
+            todas.ShowDialog();
         }
     }
 }

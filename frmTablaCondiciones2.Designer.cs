@@ -1,6 +1,6 @@
 ﻿namespace Practica_de_SQL_Base_de_datos
 {
-    partial class frmTablaCondiciones
+    partial class frmTablaCondiciones2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,42 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cmdCondicion = new System.Windows.Forms.Button();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 6);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Titulo,
+            this.Autor});
+            this.dataGridView1.Location = new System.Drawing.Point(4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(586, 313);
+            this.dataGridView1.Size = new System.Drawing.Size(347, 355);
             this.dataGridView1.TabIndex = 0;
             // 
-            // cmdCondicion
+            // Titulo
             // 
-            this.cmdCondicion.Location = new System.Drawing.Point(1, 325);
-            this.cmdCondicion.Name = "cmdCondicion";
-            this.cmdCondicion.Size = new System.Drawing.Size(107, 23);
-            this.cmdCondicion.TabIndex = 1;
-            this.cmdCondicion.Text = "Condicion";
-            this.cmdCondicion.UseVisualStyleBackColor = true;
-            this.cmdCondicion.Click += new System.EventHandler(this.button1_Click);
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.Name = "Titulo";
             // 
-            // frmTablaCondiciones
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.Name = "Autor";
+            // 
+            // frmTablaCondiciones2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 360);
-            this.Controls.Add(this.cmdCondicion);
+            this.ClientSize = new System.Drawing.Size(363, 364);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "frmTablaCondiciones";
+            this.Name = "frmTablaCondiciones2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTablaCondiciones";
+            this.Text = "frmTablaCondiciones2";
+            this.Load += new System.EventHandler(this.frmTablaCondiciones2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -69,6 +73,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button cmdCondicion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
     }
 }
