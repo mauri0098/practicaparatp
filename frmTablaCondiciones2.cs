@@ -20,7 +20,7 @@ namespace Practica_de_SQL_Base_de_datos
         private void frmTablaCondiciones2_Load(object sender, EventArgs e)
         {
             ConexionBD conexionBD = new ConexionBD();
-            conexionBD.conectarBD();
+            
             conexionBD.CondicionTabla2(dataGridView1);
         }
     }

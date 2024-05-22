@@ -59,6 +59,24 @@
     <Compile Include="frmcondicion3combox_cajadetexto.Designer.cs">
       <DependentUpon>frmcondicion3combox_cajadetexto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCondicion5TablaCompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCondicion5TablaCompleta.Designer.cs">
+      <DependentUpon>frmCondicion5TablaCompleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcondicion6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcondicion6.Designer.cs">
+      <DependentUpon>frmcondicion6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcondicionesconradiobuton5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcondicionesconradiobuton5.Designer.cs">
+      <DependentUpon>frmcondicionesconradiobuton5.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmguardartabla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmcondicion3combox_cajadetexto.resx">
       <DependentUpon>frmcondicion3combox_cajadetexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCondicion5TablaCompleta.resx">
+      <DependentUpon>frmCondicion5TablaCompleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcondicion6.resx">
+      <DependentUpon>frmcondicion6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcondicionesconradiobuton5.resx">
+      <DependentUpon>frmcondicionesconradiobuton5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmguardartabla.resx">
       <DependentUpon>frmguardartabla.cs</DependentUpon>

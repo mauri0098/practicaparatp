@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Practica_de_SQL_Base_de_datos
 {
-    public partial class frmTablaCondiciones : Form
+    public partial class frmcondicion6 : Form
     {
-        public frmTablaCondiciones()
+        public frmcondicion6()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ConexionBD conexionBD = new ConexionBD();
-          
-            conexionBD.Condicion1(dataGridView1);
         }
     }
 }

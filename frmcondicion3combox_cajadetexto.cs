@@ -25,8 +25,18 @@ namespace Practica_de_SQL_Base_de_datos
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            // Asumimos que 'conexionBD' es una instancia de la clase que contiene el método 'CondicionTabla4'
+            // Asegurarse de que la conexión a la base de datos esté abierta
             conexionBD.conectarBD();
-            conexionBD.CondicionTabla4(dgvProducto);
+
+            // Obtener el texto del TextBox y pasarlo como argumento al método 'CondicionTabla4'
+            string etiqueta = txtConsulta.Text;
+            conexionBD.CondicionTabla4(dgvProducto, etiqueta);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -41,11 +41,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dgvProducto = new System.Windows.Forms.DataGridView();
-            this.txtConsulta = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.IDLIBRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TITULO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtConsulta = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -161,6 +161,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Consultar2";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnConsultar
             // 
@@ -187,22 +188,6 @@
             this.dgvProducto.Size = new System.Drawing.Size(397, 181);
             this.dgvProducto.TabIndex = 6;
             // 
-            // txtConsulta
-            // 
-            this.txtConsulta.Location = new System.Drawing.Point(97, 3);
-            this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(147, 20);
-            this.txtConsulta.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ingresar Nombre";
-            // 
             // IDLIBRO
             // 
             this.IDLIBRO.HeaderText = "IDLIBRO";
@@ -220,6 +205,22 @@
             this.Fecha.HeaderText = "PAIS";
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
+            // 
+            // txtConsulta
+            // 
+            this.txtConsulta.Location = new System.Drawing.Point(97, 3);
+            this.txtConsulta.Name = "txtConsulta";
+            this.txtConsulta.Size = new System.Drawing.Size(147, 20);
+            this.txtConsulta.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ingresar Nombre";
             // 
             // frmcondicion3combox_cajadetexto
             // 

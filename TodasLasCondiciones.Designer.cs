@@ -34,6 +34,7 @@
             this.condicion2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardartablaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.condicion4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.condicion6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             this.condicion1ToolStripMenuItem1,
             this.condicion2ToolStripMenuItem,
             this.guardartablaToolStripMenuItem,
-            this.condicion4ToolStripMenuItem});
+            this.condicion4ToolStripMenuItem,
+            this.condicion6ToolStripMenuItem});
             this.condicion1ToolStripMenuItem.Name = "condicion1ToolStripMenuItem";
             this.condicion1ToolStripMenuItem.Size = new System.Drawing.Size(200, 20);
             this.condicion1ToolStripMenuItem.Text = "Todas las de las tablas condiciones";
@@ -87,6 +89,13 @@
             this.condicion4ToolStripMenuItem.Text = "condicion4";
             this.condicion4ToolStripMenuItem.Click += new System.EventHandler(this.condicion4ToolStripMenuItem_Click);
             // 
+            // condicion6ToolStripMenuItem
+            // 
+            this.condicion6ToolStripMenuItem.Name = "condicion6ToolStripMenuItem";
+            this.condicion6ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.condicion6ToolStripMenuItem.Text = "condicion6";
+            this.condicion6ToolStripMenuItem.Click += new System.EventHandler(this.condicion6ToolStripMenuItem_Click);
+            // 
             // TodasLasCondiciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,5 +121,6 @@
         private System.Windows.Forms.ToolStripMenuItem condicion2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardartablaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem condicion4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem condicion6ToolStripMenuItem;
     }
 }

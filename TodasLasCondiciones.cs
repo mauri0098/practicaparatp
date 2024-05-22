@@ -45,5 +45,11 @@ namespace Practica_de_SQL_Base_de_datos
             frmcondicion3combox_cajadetexto frmcondicion3combox_ =  new frmcondicion3combox_cajadetexto();
             frmcondicion3combox_.ShowDialog ();
         }
+
+        private void condicion6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          frmCondicion5TablaCompleta frm  = new frmCondicion5TablaCompleta();
+            frm.ShowDialog ();
+        }
     }
 }
